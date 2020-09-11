@@ -2,10 +2,9 @@ import React from 'react'
 import { Row, Col,Card,ListGroup } from 'react-bootstrap'
 import '../styles/ProfileInfo.css'
 import { FaWallet, FaCog,FaPlane } from 'react-icons/fa';
-import MyProfile from './MyProfile'
 
 import { Avatar } from "@chakra-ui/core";
-import Wallet from './Wallet';
+import ChangePassword from './ChangePassword';
 
 const displayComponent = (value) => {
     console.log(value)
@@ -28,7 +27,7 @@ export default function ProfileInfo() {
                 </Card>
             </Col>
             <Col lg={7}>
-                <Wallet />
+                <ChangePassword />
             </Col>
         </Row>
     )

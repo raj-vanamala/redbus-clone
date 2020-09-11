@@ -1,0 +1,38 @@
+h3 {
+    font-weight: bolder;
+    text-align: center;
+    margin: 2%;
+    color: rgb(240, 66, 66);
+}
+
+h6 {    
+    font-weight: bolder;
+    text-align: center;
+    margin: 2%;
+}
+.form-css {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(240, 66, 66);
+}
+
+[type="text"] {
+    border-style: none none solid none;
+    border-color: rgb(240, 66, 66);
+    width: 90%;
+}
+
+*:focus {
+    outline : none
+}
+
+[type="email"] {
+    border-style: none none solid none;
+    border-color: rgb(240, 66, 66);
+    width: 90%;
+}

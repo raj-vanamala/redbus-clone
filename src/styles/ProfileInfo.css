@@ -1,0 +1,7 @@
+.sideBar-css {
+   height: 70px;
+   font-size: large;
+   font-weight: bolder;
+   display: flex;
+   align-items: center;
+}

@@ -1,0 +1,30 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navBar-css {
+    display: flex;
+    flex-direction: row;
+    background-color:	rgb(240, 66, 66);
+    height: 50px;
+    align-items: center;
+}
+
+.navBar-css2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navBarItem-css {
+    margin-right: 20px;
+    color: white;
+}
+
+.brand-css {
+    margin-left: 30px;
+    color: white;
+    font-size: xx-large;
+    border-style: double;
+    border-radius: 5px;
+}

@@ -28,7 +28,7 @@ export default function RescheduleJourney() {
                 >
                     <Form>
                         <Container>
-                            <h3>RESCHEDULE TICKETS</h3>
+                            <h3 className = "h3Css">RESCHEDULE TICKETS</h3>
                             <h6>Verify your details, and <span style={{color : "rgb(240, 66, 66)"}}>Re-Schedule </span>your tickets</h6>
                             <Row className="form-css">
                                 <Col lg={6}>

@@ -28,7 +28,7 @@ export default function EmailSMS() {
                 >
                     <Form>
                         <Container>
-                            <h3>SMS AND EMAIL TICKET</h3>
+                            <h3 className = "h3Css">SMS AND EMAIL TICKET</h3>
                             <h6>Verify your details, and <span style={{color : "rgb(240, 66, 66)"}}>EMAIL / SMS</span> your tickets</h6>
                             <Row className="form-css">
                                 <Col lg={6}>

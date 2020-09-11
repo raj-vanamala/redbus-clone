@@ -29,7 +29,7 @@ export default function CancelTicket() {
                 >
                     <Form>
                         <Container>
-                            <h3>Cancel Your Ticket</h3>
+                            <h3 className = "h3Css">Cancel Your Ticket</h3>
                             <Row className="form-css">
                                 <Col lg={6}>
                                     <div>

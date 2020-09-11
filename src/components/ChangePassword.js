@@ -30,7 +30,7 @@ export default function ChangePassword() {
                 onSubmit = {onSubmit}
                 >
             <Form>
-                <h3><FaCog />Change Password</h3>
+                <h3 className = "h3css1"><FaCog />Change Password</h3>
                 <Container className = "Container-css">
                     <table style={{width:"100%"}}>
                         <tr>

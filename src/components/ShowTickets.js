@@ -28,7 +28,7 @@ export default function ShowTickets() {
                 >
                     <Form>
                         <Container>
-                            <h3>PRINT TICKET</h3>
+                            <h3 className = "h3Css">PRINT TICKET</h3>
                             <h6>Verify your details, and <span style={{color : "rgb(240, 66, 66)"}}>Print</span> your tickets</h6>
                             <Row className="form-css">
                                 <Col lg={6}>

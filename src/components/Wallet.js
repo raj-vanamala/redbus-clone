@@ -6,7 +6,7 @@ import '../styles/Wallet.css'
 export default function Wallet() {
     return (
        
-        <Container style = {{display : "flex",alignItems : "center"}}>
+        <Container >
             <Card>
             <Card.Header style = {{color: "rgb(240, 66, 66)"}}>BALANCE</Card.Header>
                 <Card.Body>

@@ -28,7 +28,7 @@ export default function CancelTicket() {
                 onSubmit = {onSubmit}
                 >
                     <Form>
-                        <Container>
+                        <Container className = "cancelTicketShadowCss">
                             <h3 className = "h3Css">Cancel Your Ticket</h3>
                             <Row className="form-css">
                                 <Col lg={6}>
@@ -48,7 +48,7 @@ export default function CancelTicket() {
                                 <Col lg={6}>
                                 </Col>
                                 <Col lg={6} >
-                                    <Button variant="outlined" color="secondary" style = {{float : "right",marginRight:"35px",marginTop : "10px"}}>
+                                    <Button variant="outlined" color="secondary" style = {{float : "right",marginRight:"35px",marginTop : "10px",marginBottom : "10px"}}>
                                         SELECT PASSENGERS
                                     </Button>
                                 </Col>

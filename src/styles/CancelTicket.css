@@ -36,3 +36,10 @@ label {
     border-color: rgb(240, 66, 66);
     width: 90%;
 }
+
+.cancelTicketShadowCss {
+    margin-top: 20px;
+    border: 1px solid  #d84f57;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #bdbcbc;
+}

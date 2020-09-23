@@ -1,0 +1,30 @@
+.MyTripsFontCss {
+    margin-top: 30px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.MyTripsInfoBarCss {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    border: 1px solid  #d84f57;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #bdbcbc;
+}
+
+.TripLinks {
+    cursor: pointer;
+}
+
+.TripLinks:hover {
+    color: #d84f57;
+}
+
+.MyTripsMessageCss {
+    height: 100px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

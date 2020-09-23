@@ -27,7 +27,7 @@ export default function EmailSMS() {
                 onSubmit = {onSubmit}
                 >
                     <Form>
-                        <Container>
+                        <Container className = "cancelTicketShadowCss">
                             <h3 className = "h3Css">SMS AND EMAIL TICKET</h3>
                             <h6>Verify your details, and <span style={{color : "rgb(240, 66, 66)"}}>EMAIL / SMS</span> your tickets</h6>
                             <Row className="form-css">
@@ -48,7 +48,7 @@ export default function EmailSMS() {
                                 <Col lg={6}>
                                 </Col>
                                 <Col lg={6} >
-                                    <Button variant="outlined" color="secondary" style = {{float : "right",marginRight:"35px",marginTop : "10px"}}>
+                                    <Button variant="outlined" color="secondary" style = {{float : "right",marginRight:"35px",marginTop : "10px",marginBottom: "20px"}}>
                                         SUBMIT
                                     </Button>
                                 </Col>

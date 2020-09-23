@@ -1,0 +1,21 @@
+.MyProfileContainerCss {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #d84f57;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #bdbcbc;
+}
+
+.profileFontCss {
+    font-size: 15px;
+}
+
+.profileFormCss {
+
+}
+
+.profileFormCss::placeholder {
+    color: white;
+}

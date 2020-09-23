@@ -2,3 +2,7 @@
     font-size: large;
     font-weight: bold;
 }
+
+.WalletsCardsCss {
+    box-shadow: 0 0 10px #bdbcbc;
+}

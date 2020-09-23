@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import '../styles/ChangePassword.css'
-import { FaCog } from 'react-icons/fa';
 import { Formik,Form,Field,ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import TextError from './TextError'
@@ -24,13 +23,14 @@ const validationSchema =  Yup.object({
 export default function ChangePassword() {
     return (
 
-        <Formik
+        <div style={{margin: "20px 0px 0px 20px"}}>
+            <Formik
                 initialValues = {initialValues}
                 validationSchema = {validationSchema}
                 onSubmit = {onSubmit}
                 >
             <Form>
-                <h3 className = "h3css1"><FaCog />Change Password</h3>
+                <h1 className = "h3css1">Change Password</h1>
                 <Container className = "Container-css">
                     <table style={{width:"100%"}}>
                         <tr>
@@ -60,6 +60,7 @@ export default function ChangePassword() {
                 </Container>
             </Form>
         </Formik>
+        </div>
         
     )
 }

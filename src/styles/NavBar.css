@@ -5,7 +5,7 @@ body {
 .navBar-css {
     display: flex;
     flex-direction: row;
-    background-color:	rgb(240, 66, 66);
+    background-color: #d84f57;
     height: 50px;
     align-items: center;
 }

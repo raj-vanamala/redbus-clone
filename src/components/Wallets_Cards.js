@@ -1,14 +1,13 @@
 import React from 'react'
 import { Card, Container } from 'react-bootstrap'
 import '../styles/Wallets_Cards.css'
-import { FaWallet } from 'react-icons/fa';
 
 export default function WalletsCards() {
     return (
-        <>
-        <h3 style = {{color: "rgb(240, 66, 66)",display : "flex",justifyContent: "flex-start"}}><FaWallet />Wallet</h3>
+        <div style={{margin: "20px 0px 0px 20px"}}>
+        <h1 style = {{display : "flex",justifyContent: "flex-start"}}>Wallet</h1>
         <Container style = {{marginTop : "5%"}}>
-            <Card>
+            <Card className = "WalletsCardsCss">
                 <Card.Body className = "text-css">
                     <Card.Text>Total Balance<span style = {{color: "rgb(240, 66, 66)",float : "right"}}>INR 0</span></Card.Text>
                     <Card.Text>Your Cash <span style = {{color: "rgb(240, 66, 66)",float : "right"}}>INR 0</span></Card.Text>
@@ -16,6 +15,6 @@ export default function WalletsCards() {
                 </Card.Body>
         </Card>
         </Container>
-        </>
+        </div>
     )
 }

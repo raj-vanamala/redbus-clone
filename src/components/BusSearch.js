@@ -1,8 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import '../styles/BusSearch.css'
 import { Button } from '@material-ui/core';
 
 export default function BusSearch() {
+ 
+    const [displayBusLayout , setDisplayBusLayout] = useState(false);
+    const [displayTravelInfo , setDisplayTravelInfo] = useState(false);
 
     return (
         <div className="BusSearch">
@@ -40,11 +43,73 @@ export default function BusSearch() {
                                 </div>
                             </div>
                             <div className="viewSeatsButtonCss">
-                                <Button variant="outlined" color="secondary">
-                                    VIEW SEATS                
-                                </Button>
+                                {
+                                    (displayBusLayout=== false)?
+                                        
+                                        <Button onClick={()=>setDisplayBusLayout(true)} variant="outlined" color="secondary">
+                                        VIEW SEATS                
+                                        </Button>
+                                        
+                                        :
+                                        
+                                        <Button onClick={()=>setDisplayBusLayout(false)} variant="outlined" color="secondary">
+                                            HIDE SEATS                
+                                        </Button>
+                                       
+                                }
                             </div>
                         </div>
+                        {
+                                (displayBusLayout=== true)?
+                                <div className="BusLayoutCss">
+                                    <div className="BusSeatsLayout">
+                                            <div style={{display : "flex",justifyContent:"space-around"}}>
+                                                <div className = "seatStatusCss1">Available</div>
+                                                <div className = "seatStatusCss2">UnAvailable</div>
+                                            </div> <hr />
+                                            <div className="BusSeatsContainerCss">
+                                                <span className="BusDriverFontCss">D</span>
+                                                <div className="seatsRow1Css">
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss">S1</span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                </div>
+                                                <div className="seatsRow2Css">
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                </div>
+                                                <div className="seatsRow3Css">
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                </div>
+                                                <div className="seatsRow4Css">
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                    <span onClick={()=>setDisplayTravelInfo(true)} className="BusSeatsCss"></span>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    {
+                                        (displayTravelInfo=== true)?<div className="selectedSeatsInfoCss">working</div>:""
+                                    }
+                                </div>
+                                : 
+                                ""
+                            }
                         <div className="specificBus" style={{margin:"10px 0px 10px 0px"}}>
                             <div style={{display:"flex"}}>
                                 <div style={{display:"flex",flexDirection: "column",width: "500px",fontFamily: "Verdana, Geneva, Tahoma, sans-serif"}}>

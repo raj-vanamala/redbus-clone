@@ -17,6 +17,8 @@ import CancelTicket from "./CancelTicket";
 import RescheduleJourney from "./RescheduleJourney";
 import ShowTickets from "./ShowTickets";
 import EmailSMS from "./Email_SMS";
+import BusSearch from "./BusSearch";
+
 import { Avatar } from "@chakra-ui/core";
 
 
@@ -98,6 +100,10 @@ export default function NavBar() {
           </Route>
           <Route path="/Email_SMS">
             <EmailSMS />
+            <Footer />
+          </Route>
+          <Route path="/BusSearch">
+            <BusSearch />
             <Footer />
           </Route>
         </Switch>

@@ -9,7 +9,7 @@ export default function Footer() {
             display:"flex",
             flexDirection:"row",
             justifyContent:"space-between",
-            position : "absolute",
+            position : "fixed",
             bottom : "0"
             }}>
 

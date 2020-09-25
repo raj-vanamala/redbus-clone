@@ -70,7 +70,21 @@
 }
 
 .selectedSeatsInfoCss {
-    width: 50%;
+    width: 50%
+}
+
+.selectedSeatsInfoCss1 {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #bdbcbc;
+    border-radius: 10px;
+}
+
+.selectedSeatsInfoCss1 div span:hover {
+    cursor: pointer;
 }
 
 .seatStatusCss1 {
@@ -97,11 +111,13 @@
     width: 500px;
     height: 200px;
     border-left: 10px solid black;
-    background-color: aliceblue;
+    background-color: white;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-radius: 20px;
+    box-shadow: 0 0 10px #bdbcbc;
+    /* border-radius: 10px; */
 }
 
 .BusDriverFontCss {
@@ -151,4 +167,12 @@
 
 div.seatsRow1Css span:hover,div.seatsRow2Css span:hover,div.seatsRow3Css span:hover,div.seatsRow4Css span:hover {
     cursor: pointer;
+}
+
+.travelInfoCss {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
 }

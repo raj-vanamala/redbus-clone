@@ -4,4 +4,6 @@
    font-weight: bolder;
    display: flex;
    align-items: center;
+   box-shadow: 0 0 10px #bdbcbc;
+    border-radius: 10px;
 }

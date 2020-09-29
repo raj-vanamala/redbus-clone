@@ -131,19 +131,19 @@ export default function BusSearch() {
                                                         <h2 style={{textAlign : "center",color:"#d84f57"}}>BOARDING POINT</h2>
                                                         <hr />
                                                         <div>
-                                                            <input onChange={handleStateChanges} onClick={()=>{setDisplayBoardingPointInfo(false);setDisplayDroppingPointInfo(true)}} value="BoardingPoint1" type="radio" name="source" />
+                                                            <input id="bp1" onChange={handleStateChanges} onClick={()=>{setDisplayBoardingPointInfo(false);setDisplayDroppingPointInfo(true)}} value="BoardingPoint1" type="radio" name="source" />
                                                             <label>BoardingPoint 1</label>
                                                         </div>
                                                         <div>
-                                                            <input onChange={handleStateChanges} onClick={()=>{setDisplayBoardingPointInfo(false);setDisplayDroppingPointInfo(true)}} value="BoardingPoint2" type="radio" name="source" />
+                                                            <input id="bp2" onChange={handleStateChanges} onClick={()=>{setDisplayBoardingPointInfo(false);setDisplayDroppingPointInfo(true)}} value="BoardingPoint2" type="radio" name="source" />
                                                             <label>BoardingPoint 2</label>
                                                         </div>
                                                         <div>
-                                                            <input onChange={handleStateChanges} onClick={()=>{setDisplayBoardingPointInfo(false);setDisplayDroppingPointInfo(true)}} value="BoardingPoint3" type="radio" name="source" />
+                                                            <input id="bp3" onChange={handleStateChanges} onClick={()=>{setDisplayBoardingPointInfo(false);setDisplayDroppingPointInfo(true)}} value="BoardingPoint3" type="radio" name="source" />
                                                             <label>BoardingPoint 3</label>
                                                         </div>
                                                         <div>
-                                                            <input onChange={handleStateChanges} onClick={()=>{setDisplayBoardingPointInfo(false);setDisplayDroppingPointInfo(true)}} value="BoardingPoint4" type="radio" name="source" />
+                                                            <input id="bp4" onChange={handleStateChanges} onClick={()=>{setDisplayBoardingPointInfo(false);setDisplayDroppingPointInfo(true)}} value="BoardingPoint4" type="radio" name="source" />
                                                             <label>BoardingPoint 4</label>
                                                         </div>
                                                     </div>
@@ -154,19 +154,19 @@ export default function BusSearch() {
                                                         <h2 style={{textAlign : "center",color:"#d84f57"}}>DROPPING POINT</h2>
                                                         <hr />
                                                         <div>
-                                                            <input onChange={handleStateChanges} onClick={()=>setDisplayDroppingPointInfo(false)} value="DroppingPoint1" type="radio" name="destination" />
+                                                            <input id="dp1" onChange={handleStateChanges} onClick={()=>setDisplayDroppingPointInfo(false)} value="DroppingPoint1" type="radio" name="destination" />
                                                             <label>DroppingPoint 1</label>
                                                         </div>
                                                         <div>
-                                                            <input onChange={handleStateChanges} onClick={()=>setDisplayDroppingPointInfo(false)} value="DroppingPoint2" type="radio" name="destination" />
+                                                            <input id="dp1" onChange={handleStateChanges} onClick={()=>setDisplayDroppingPointInfo(false)} value="DroppingPoint2" type="radio" name="destination" />
                                                             <label>DroppingPoint 2</label>
                                                         </div>
                                                         <div>
-                                                            <input onChange={handleStateChanges} onClick={()=>setDisplayDroppingPointInfo(false)} value="DroppingPoint3" type="radio" name="destination" />
+                                                            <input id="dp1" onChange={handleStateChanges} onClick={()=>setDisplayDroppingPointInfo(false)} value="DroppingPoint3" type="radio" name="destination" />
                                                             <label>DroppingPoint 3</label>
                                                         </div>
                                                         <div>
-                                                            <input onChange={handleStateChanges} onClick={()=>setDisplayDroppingPointInfo(false)} value="DroppingPoint4" type="radio" name="destination" />
+                                                            <input id="dp1" onChange={handleStateChanges} onClick={()=>setDisplayDroppingPointInfo(false)} value="DroppingPoint4" type="radio" name="destination" />
                                                             <label>DroppingPoint 4</label>
                                                         </div>
                                                     </div>

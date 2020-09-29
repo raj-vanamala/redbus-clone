@@ -16,22 +16,31 @@ export default function Home() {
     function changeStateValues (event) {
 
         let target = event.target;
-        console.log(target.value)
+        
 
         if(target.name === "source"){
+            console.log('enter');
             setSource(target.value)
+            console.log(target.value)
         }
         else if(target.name === "destination"){
+            console.log('enter');
             setDestination(target.value)
+            console.log(target.value)
         }
-        else if(target.name === "productCategory"){
+        else if(target.name === "journeyDate"){
             setJourneyDate(target.value)
+            console.log(target.value)
         }
     }
 
     function searchBus() {
 
-        history.push('/busSearch')
+        if(source!=="" && destination!=="" && journeyDate !=="") {
+            history.push('/busSearch')
+        } else {
+            alert('Please Check Entered Details')
+        }
     }
 
     return (
@@ -40,28 +49,27 @@ export default function Home() {
             <div style={{position : "absolute", top:"50%",left:"15%",display:"flex",flexDirection:"row"}}>
                 
                     <div style={{width:"300px"}}>
-                        <input value={source} onChange={changeStateValues} list="sources" id="source" style={{height : "50px",borderBottomStyle : "none"}} type="text" placeholder="FROM"></input>
+                        <input name="source" type="text" id="source" placeholder="FROM" value={source}  onChange={changeStateValues} list="sources" style={{height : "50px",borderBottomStyle : "none"}} />
                         <datalist id="sources">
-                            <option value="Hyderabad" />
-                            <option value="Mumbai" />
-                            <option value="Chennai" />
+                            <option id="source1" value="Hyderabad" />
+                            <option id="source2" value="Mumbai" />
+                            <option id="source3" value="Chennai" />
                         </datalist>
                     </div>
                     <div style={{width:"300px"}}>
-                        <input value={destination} onChange={changeStateValues} list="destinations" id="destination" style={{height : "50px",borderBottomStyle : "none"}} type="text" placeholder="TO"></input>
+                        <input name="destination" value={destination} onChange={changeStateValues} list="destinations" id="destination" style={{height : "50px",borderBottomStyle : "none"}} type="text" placeholder="TO" />
                         <datalist id="destinations">
-                            <option value="Hyderabad" />
-                            <option value="Mumbai" />
-                            <option value="Chennai" />
+                            <option id="destination1" value="Hyderabad" />
+                            <option id="destination1" value="Mumbai" />
+                            <option id="destination1" value="Chennai" />
                         </datalist>
                     </div>
                     <div>
-                        <input value={journeyDate} onChange={changeStateValues} style={{height : "50px"}} type="date" min={currentDate}></input>
+                        <input name="journeyDate" type="date" value={journeyDate} onChange={changeStateValues} style={{height : "50px",color:"black"}} />
                     </div>
                     <div>
                         <Button onClick={searchBus} style={{height : "50px"}} variant="danger" color="secondary">Search Buses</Button>
                     </div>
-                
             </div>
         </div>
     )

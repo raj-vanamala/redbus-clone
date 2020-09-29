@@ -176,3 +176,8 @@ div.seatsRow1Css span:hover,div.seatsRow2Css span:hover,div.seatsRow3Css span:ho
     font-size: large;
     font-weight: bold;
 }
+
+.selectSeatsCss {
+    color: white;
+    background-color: black;
+}
